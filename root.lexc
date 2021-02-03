@@ -1,1 +1,14 @@
 Multichar_Symbols
+
+! Part of Speech/Parte del discurso
++N  ! Noun/Sustantivo
++V  ! Verb/Verbo
+
+! Possesives/Posesivas
++1POSS !First person possesive/Posesiva de primera persona
++2POSS !Second person possesive/Posesiva de segunda persona
++3POSS !Third person possessive/Posesiva de segunda persona
+
+LEXICON Root
+Nouns ; !sustantivos
+Verbs ; !verbos
