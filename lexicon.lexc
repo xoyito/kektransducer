@@ -1,0 +1,154 @@
+Multichar_Symbols
+
+! Part of Speech/Parte del discurso
++N  ! Noun/Sustantivo
+    -POSS !unpossessed
+    +POSS.1SN
+    +POSS.1PL
+    +POSS.2SN
+    +POSS.2PL
+    +POSS.3SN
+    +POSS.3PL
+    +SN
+    +PL
+
++V  ! Verb/Verbo
+
++Det !determiner/determinante
+    +Masc
+
++Conj !conjunction/conjunción
+
++Adv !adverb/adverbio
+
++Pro !pronouns/pronombres
+    +1SN
+    +1PL
+    +2SN
+    +2PL
+    +3SN
+    +3PL
+
++Int !interrogative
+
++Adj !adjetivos
+
+! Possesive prefixes/prefijos posesivos
+@U.POSS.1SN@ !Posesiva de primera persona singular
+@U.POSS.2SN@ !Posesiva de segunda persona singular
+@U.POSS.3SN@ !Posesiva de tercera persona singular
+@U.POSS.1PL@ !Posesiva de primera persona plural
+@U.POSS.2PL@ !Posesiva de segunda persona plural
+@U.POSS.3PL@ !Posesiva de tercera persona plural
+@U.POSS.NON@ !Unpossessed form/forma no poseída
+
+!archiphonemes for possessive prefixes.
+ %{POSS.1SN%}
+ %{POSS.2SN%}
+ %{POSS.3SN%}
+ %{POSS.1PL%}
+ %{POSS.2PL%}
+ %{POSS.3PL%}
+
+
+LEXICON Root
+Verbs   ; !verbos
+POSS_prefix  ; !prefijos 
+Determiner ; !determinantes
+Conjunction ; !conjunciones
+Adverb ; !adverbios
+Preposition ; !preposiciones
+Pronoun ; !pronombres
+Interrogative ;
+Adjective ; !adjetivos
+LEXICON Nouns
+jolom     N ; !cabeza/head
+kik'      N ; !sangre/blood
+b'aq      N ; !hueso/bone
+uuq       N ; !corte/tradicional fabric
+tz'ultul  N ; !cerro/hill
+tib'aaq   N ; !carne de cerdo/pork
+uk'a'     N ; !bebida/drink
+chahim    N ; !star/estrella
+ch'o      N ; !mouse/ratón
+ha'       N ; !water/agua
+kenq'     N ; !bean/frijol
+la        N ; !poison ivy/chichicaste
+peepem    N ; !butterfly/mariposa
+q'uq'     N ; !quetzal
+saak'     N ; !grasshopper/saltamontes
+tzuul     N ; !hill/cerro
+tz'in     N ; !cassava/yuca
+tenamit   N ; !town or country/pueblo o país
+ch'och'   N ; !land/tierra
+aatin     N ; !word/palabra
+winq      N ; !man or person/hombre o persona
+kutan     N ; !time/tiempo
+ochoch    N ; !house/casa
+
+LEXICON Verbs
+!!!!FIXME -k is an optional suffix, verb roots do not include this, suffix becomes -q in future tense.
+k'anjelak     V; !to work/trabajar
+k'atok        V; !to burn/quemar
+mesunk        V; !to sweep/barrer
+wark          V; !to sleep/dormir
+atink         V; !to bathe/bañarse
+kamk          V; !to die/morir
+b'eek         V; !to walk/caminar
+xajok         V; !to dance/bailar
+
+LEXICON V
+# ;
+LEXICON POSS_prefix
+!Possessive Prefixes
+@U.POSS.1SN@:@U.POSS.1SN@%{POSS.1SN%} Nouns ;
+@U.POSS.2SN@:@U.POSS.2SN@%{POSS.2SN%} Nouns ;
+@U.POSS.3SN@:@U.POSS.3SN@%{POSS.3SN%} Nouns ;
+@U.POSS.1PL@:@U.POSS.1PL@%{POSS.1PL%} Nouns ; 
+@U.POSS.2PL@:@U.POSS.2PL@%{POSS.2PL%} Nouns ;
+@U.POSS.3PL@:@U.POSS.3PL@%{POSS.3PL%} Nouns ;
+@U.POSS.NON@                          Nouns ;
+
+LEXICON N
+@U.POSS.NON@+N:@U.POSS.NON@ PL_suffix ;
+@U.POSS.1SN@+N+POSS.1SN:@U.POSS.1SN@ PL_suffix ; 
+@U.POSS.2SN@+N+POSS.2SN:@U.POSS.2SN@ PL_suffix ;
+@U.POSS.3SN@+N+POSS.3SN:@U.POSS.3SN@ PL_suffix ;
+@U.POSS.1PL@+N+POSS.1PL:@U.POSS.1PL@ PL_suffix ;
+@U.POSS.2PL@+N+POSS.2PL:@U.POSS.2PL@ PL_suffix ;
+@U.POSS.3PL@+N+POSS.3PL:@U.POSS.3PL@ POSS_suffix ;
+
+
+LEXICON POSS_suffix
++SN:eb' #;
++PL:eb' #;
+
+LEXICON PL_suffix
++SN:    #;
++PL:eb' #;
+LEXICON Adjective
+ink'a'+Adj:ink'a' # ;!no
+yaal+Adj:yaal # ;!true/verdadero
+xb'een+adj:xb'een # ;!first/primero
+LEXICON Adverb
+sa'+Adv:sa' # ; !in/en
+chik+Adv:chik # ; !again/otra vez
+LEXICON Conjunction
+ut+Conj:ut # ; !and/y
+LEXICON Determiner
+li+Det:li # ; !the/el/la
+laj+Det+Masc:laj # ; !marker for male people/indica personas masculinas
+jun+Det:jun # ; !a/un/una
+LEXICON Interrogative
+jo'+int:jo' # ;!how?/como
+
+LEXICON Preposition
+re+Prep:re # ; !of/de
+ru+Prep:ru # ; !from/de
+chirix+Prep:chirix # ; !about/sobre
+eb'+Prep:eb' # ; !FIXME synonymous with the suffix eb'
+LEXICON Pronoun
+laa'in+Pro+1SN:laa'in # ; !I/yo
+a'an+Pro+3SN:a'an # ; !pronombre de tercera person singular
+chixjunil+Pro:chixjunil #; !everything/todo
+

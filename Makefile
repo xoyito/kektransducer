@@ -9,10 +9,13 @@ all : lexicon.lexc \
 	gen.hfstol \
 	ana.hfstol \
 	ana.png \
-	lexicon.png
+	lexicon.png 
 
-lexicon.lexc : root.lexc nouns.lexc verbs.lexc prefix.lexc
-	cat root.lexc nouns.lexc verbs.lexc prefix.lexc > lexicon.lexc
+lexicon.lexc : root.lexc nouns.lexc verbs.lexc prefix.lexc 
+	cat root.lexc nouns.lexc verbs.lexc prefix.lexc suffix.lexc adjectives.lexc adverbs.lexc conjunctions.lexc determiners.lexc interrogatives.lexc prepositions.lexc pronouns.lexc > lexicon.lexc
+
+phonology.hfst : phonology.twolc
+	hfst-twolc phonology.twolc > phonology.hfst
 
 gen.hfst : lexicon.lexc
 	hfst-lexc <lexicon.lexc >gen.hfst
@@ -35,3 +38,4 @@ lexicon.png : lexicon.lexc
 .PHONY : clean
 clean :
 	-rm *.hfst *.hfstol lexicon.lexc
+	

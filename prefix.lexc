@@ -1,8 +1,20 @@
-LEXICON prefix !!!!!FIXME differentiate between prevocalic and preconsonantal prefixes
-! preconsonantal/prevocalic / preconsonantal/prevocálico
-@U.POSS.1SN@:in@U.POSS.1SN@ Nouns ;
-@U.POSS.2SN@:aa@U.POSS.2SN@ Nouns ;
-@U.POSS.3SN@:x@U.POSS.3SN@ Nouns ;
-@U.POSS.1PL@:qa@U.POSS.1PL@ Nouns ;
-@U.POSS.2PL@:ee@U.POSS.2PL@ Nouns ;
-!!!!!FIXME add 3 person plural = prefix x- and suffix -eb'
+LEXICON POSS_prefix
+!Possessive Prefixes
+@U.POSS.1SN@:@U.POSS.1SN@%{POSS.1SN%} Nouns ;
+@U.POSS.2SN@:@U.POSS.2SN@%{POSS.2SN%} Nouns ;
+@U.POSS.3SN@:@U.POSS.3SN@%{POSS.3SN%} Nouns ;
+@U.POSS.1PL@:@U.POSS.1PL@%{POSS.1PL%} Nouns ; 
+@U.POSS.2PL@:@U.POSS.2PL@%{POSS.2PL%} Nouns ;
+@U.POSS.3PL@:@U.POSS.3PL@%{POSS.3PL%} Nouns ;
+@U.POSS.NON@                          Nouns ;
+
+LEXICON N
+@U.POSS.NON@+N:@U.POSS.NON@ PL_suffix ;
+@U.POSS.1SN@+N+POSS.1SN:@U.POSS.1SN@ PL_suffix ; 
+@U.POSS.2SN@+N+POSS.2SN:@U.POSS.2SN@ PL_suffix ;
+@U.POSS.3SN@+N+POSS.3SN:@U.POSS.3SN@ PL_suffix ;
+@U.POSS.1PL@+N+POSS.1PL:@U.POSS.1PL@ PL_suffix ;
+@U.POSS.2PL@+N+POSS.2PL:@U.POSS.2PL@ PL_suffix ;
+@U.POSS.3PL@+N+POSS.3PL:@U.POSS.3PL@ POSS_suffix ;
+
+
